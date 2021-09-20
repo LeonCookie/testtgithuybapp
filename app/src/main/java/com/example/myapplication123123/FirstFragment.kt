@@ -72,10 +72,20 @@ class FirstFragment : Fragment() {
         view.findViewById<Button>(R.id.buttonprzecinek).setOnClickListener {
             view.findViewById<TextView>(R.id.textdzialanie).setText(".",)
         }
-        view.findViewById<Button>(R.id.buttondel).setOnClickListener {
+        view.findViewById<Button>(R.id.buttonClear).setOnClickListener {
             view.findViewById<TextView>(R.id.textdzialanie).setText("" ,)
+            view.findViewById<TextView>(R.id.textWynik).setText("" ,)
+        }
+        view.findViewById<Button>(R.id.buttondel).setOnClickListener {
+            val text = view.findViewById<TextView>(R.id.textdzialanie).text.toString()
+           // view.findViewById<TextView>(R.id.textdzialanie).text = text.drop(1)
         }
 
+        view.findViewById<Button>(R.id.buttonWynik).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).text=("cos tam dziala przycisk")
+        }
 
     }
+
+
 }
