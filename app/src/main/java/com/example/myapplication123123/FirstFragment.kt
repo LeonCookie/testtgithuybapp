@@ -15,8 +15,8 @@ import androidx.navigation.fragment.findNavController
 class FirstFragment : Fragment() {
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_first, container, false)
@@ -29,7 +29,34 @@ class FirstFragment : Fragment() {
         view.findViewById<Button>(R.id.button1).setOnClickListener {
             view.findViewById<TextView>(R.id.textWynik).setText("1",)
         }
+        view.findViewById<Button>(R.id.button2).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("2",)
+        }
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("3",)
+        }
+        view.findViewById<Button>(R.id.button4).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("4",)
+        }
+        view.findViewById<Button>(R.id.button5).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("5",)
+        }
+        view.findViewById<Button>(R.id.button6).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("6",)
+        }
+        view.findViewById<Button>(R.id.button7).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("7",)
+        }
+        view.findViewById<Button>(R.id.button8).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("8",)
+        }
+        view.findViewById<Button>(R.id.button9).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("9",)
+        }
+        view.findViewById<Button>(R.id.button0).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("0",)
 
 
+        }
     }
 }
