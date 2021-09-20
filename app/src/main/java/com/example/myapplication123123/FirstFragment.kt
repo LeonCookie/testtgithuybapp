@@ -55,8 +55,27 @@ class FirstFragment : Fragment() {
         }
         view.findViewById<Button>(R.id.button0).setOnClickListener {
             view.findViewById<TextView>(R.id.textWynik).setText("0",)
-
-
         }
+        //znaki
+
+        view.findViewById<Button>(R.id.buttonplus).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("+",)
+        }
+
+        view.findViewById<Button>(R.id.buttondzielenie).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("/",)
+        }
+
+        view.findViewById<Button>(R.id.buttonmnozenie).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("*",)
+        }
+        view.findViewById<Button>(R.id.buttonprzecinek).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText(".",)
+        }
+        view.findViewById<Button>(R.id.buttondel).setOnClickListener {
+            view.findViewById<TextView>(R.id.textWynik).setText("" ,)
+        }
+
+
     }
 }
