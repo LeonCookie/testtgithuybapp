@@ -130,14 +130,14 @@
 
     <EditText
         android:id="@+id/textWynik"
-        android:layout_width="412dp"
-        android:layout_height="184dp"
+        android:layout_width="409dp"
+        android:layout_height="74dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054" />
+        app:layout_constraintVertical_bias="0.217" />
 
     <Button
         android:id="@+id/buttondzielenie"
@@ -207,4 +207,16 @@
         android:text="Del"
         app:layout_constraintEnd_toEndOf="@+id/buttonClear"
         app:layout_constraintTop_toBottomOf="@+id/buttonClear" />
+
+    <EditText
+        android:id="@+id/textdzialanie"
+        android:layout_width="412dp"
+        android:layout_height="109dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textWynik"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

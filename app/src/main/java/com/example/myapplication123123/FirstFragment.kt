@@ -27,53 +27,53 @@ class FirstFragment : Fragment() {
 
         //liczby
         view.findViewById<Button>(R.id.button1).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("1",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("1",)
         }
         view.findViewById<Button>(R.id.button2).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("2",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("2",)
         }
         view.findViewById<Button>(R.id.button3).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("3",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("3",)
         }
         view.findViewById<Button>(R.id.button4).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("4",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("4",)
         }
         view.findViewById<Button>(R.id.button5).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("5",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("5",)
         }
         view.findViewById<Button>(R.id.button6).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("6",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("6",)
         }
         view.findViewById<Button>(R.id.button7).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("7",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("7",)
         }
         view.findViewById<Button>(R.id.button8).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("8",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("8",)
         }
         view.findViewById<Button>(R.id.button9).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("9",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("9",)
         }
         view.findViewById<Button>(R.id.button0).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("0",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("0",)
         }
         //znaki
 
         view.findViewById<Button>(R.id.buttonplus).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("+",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("+",)
         }
 
         view.findViewById<Button>(R.id.buttondzielenie).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("/",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("/",)
         }
 
         view.findViewById<Button>(R.id.buttonmnozenie).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("*",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("*",)
         }
         view.findViewById<Button>(R.id.buttonprzecinek).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText(".",)
+            view.findViewById<TextView>(R.id.textdzialanie).setText(".",)
         }
         view.findViewById<Button>(R.id.buttondel).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).setText("" ,)
+            view.findViewById<TextView>(R.id.textdzialanie).setText("" ,)
         }
 
 
