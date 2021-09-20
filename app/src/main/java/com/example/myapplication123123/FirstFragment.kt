@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
+import net.objecthunter.exp4j.ExpressionBuilder
+
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -83,9 +85,28 @@ class FirstFragment : Fragment() {
 
         view.findViewById<Button>(R.id.buttonWynik).setOnClickListener {
             view.findViewById<TextView>(R.id.textWynik).text=("cos tam dziala przycisk")
+
+            // zabawa :(
+
+            val text =  view.findViewById<TextView>(R.id.textdzialanie).text.toString()
+            val expression = ExpressionBuilder(text).build()
+
+            val result = expression.evaluate()
+            val longResult = result.toLong()
+            if (result == longResult.toDouble()) {
+                view.findViewById<TextView>(R.id.textWynik).text = longResult.toString()
+            } else {
+                view.findViewById<TextView>(R.id.textWynik).text = result.toString()
+            }
         }
+
+
+
+
+
+    }
 
     }
 
 
-}
+
