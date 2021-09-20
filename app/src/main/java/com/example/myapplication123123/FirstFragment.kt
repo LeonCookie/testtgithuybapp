@@ -63,6 +63,9 @@ class FirstFragment : Fragment() {
         view.findViewById<Button>(R.id.buttonplus).setOnClickListener {
             view.findViewById<TextView>(R.id.textdzialanie).setText("+",)
         }
+        view.findViewById<Button>(R.id.buttonplus).setOnClickListener {
+            view.findViewById<TextView>(R.id.textdzialanie).setText("-",)
+        }
 
         view.findViewById<Button>(R.id.buttondzielenie).setOnClickListener {
             view.findViewById<TextView>(R.id.textdzialanie).setText("/",)
@@ -71,6 +74,7 @@ class FirstFragment : Fragment() {
         view.findViewById<Button>(R.id.buttonmnozenie).setOnClickListener {
             view.findViewById<TextView>(R.id.textdzialanie).setText("*",)
         }
+
         view.findViewById<Button>(R.id.buttonprzecinek).setOnClickListener {
             view.findViewById<TextView>(R.id.textdzialanie).setText(".",)
         }
@@ -84,7 +88,6 @@ class FirstFragment : Fragment() {
         }
 
         view.findViewById<Button>(R.id.buttonWynik).setOnClickListener {
-            view.findViewById<TextView>(R.id.textWynik).text=("cos tam dziala przycisk")
 
             // zabawa :(
 
