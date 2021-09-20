@@ -10,11 +10,12 @@ import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import net.objecthunter.exp4j.ExpressionBuilder
 
-
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class FirstFragment : Fragment() {
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,6 +27,7 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
         //liczby
         view.findViewById<Button>(R.id.button1).setOnClickListener {
@@ -80,11 +82,15 @@ class FirstFragment : Fragment() {
         }
         view.findViewById<Button>(R.id.buttonClear).setOnClickListener {
             view.findViewById<TextView>(R.id.textdzialanie).setText("" ,)
-            view.findViewById<TextView>(R.id.textWynik).setText("" ,)
+            view.findViewById<TextView>(R.id.textWynik).text(R.id.textWynik).setText("" ,)
         }
         view.findViewById<Button>(R.id.buttondel).setOnClickListener {
-            val text = view.findViewById<TextView>(R.id.textdzialanie).text.toString()
-           // view.findViewById<TextView>(R.id.textdzialanie).text = text.drop(1)
+            val text = tvExpression.text.toString()
+            if(text.isNotEmpty()) {
+                view.findViewById<TextView>(R.id.textdzialanie).text = text.drop(1)
+            }
+
+            view.findViewById<TextView>(R.id.textWynik).text = ""
         }
 
         view.findViewById<Button>(R.id.buttonWynik).setOnClickListener {
